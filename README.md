@@ -34,7 +34,9 @@
 # zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
 # systemctl restart zabbix-server zabbix-agent apache2
 # systemctl enable zabbix-server zabbix-agent apache2
+
 ```
+<img width="1221" height="731" alt="image" src="https://github.com/user-attachments/assets/d879ee9e-5f52-4289-aada-ff8c62c07335" />
 
 
 ---
