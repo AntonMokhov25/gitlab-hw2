@@ -45,29 +45,16 @@
 ### Задание 2
 
 ```
-stages:
-  - test
-  - build
-
-test:
-  stage: test
-  image: golang:1.17
-  script: 
-   - go test .
-  tags:
-     - netology
-
-build:
-  stage: build
-  image: docker:latest
-  script:
-   - docker build .
-  tags:
-    - netology
+wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_6.0+ubuntu24.04_all.deb
+dpkg -i zabbix-release_latest_6.0+ubuntu24.04_all.deb
+apt update
+apt install zabbix-agent
+systemctl restart zabbix-agent
+systemctl enable zabbix-agent
 ```
+<img width="1214" height="723" alt="image" src="https://github.com/user-attachments/assets/89050fc0-0174-445e-94a3-f3fdac0fc628" />
+<img width="1220" height="691" alt="image" src="https://github.com/user-attachments/assets/bb008cfd-7ccf-44e4-b0c2-241b99348b75" />
+<img width="1208" height="719" alt="image" src="https://github.com/user-attachments/assets/1fd1b168-efac-44c6-87c6-b402b5bbe0c9" />
 
 
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](imagegit push origin main-3.png)
 
